@@ -74,7 +74,7 @@ nav ul li {
 
 .container {
   max-width: 1000px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 80px;
 }
@@ -119,14 +119,63 @@ p {
 }
 
 .product-square {
-  height: 350px;
+  height: 400px;
   min-width: 300px;
-  border: 1px solid #000;
   margin-bottom: 50px;
+  border: 1px solid #ff700f;
 }
 
 .margin-zero {
   margin-bottom: 0; 
+}
+
+.product-picture {
+  height: 220px;
+  text-align: center;
+}
+
+.product-picture img {
+  height: 100%;
+  border-bottom: 1px solid #ff700f;
+}
+
+.product-information {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.product-information h3 {
+  margin: 0;
+  color: #ff700f;
+}
+
+.product-name {
+  display: block;
+  width: 100%;
+}
+
+.product-name h5 {
+  margin: 5px auto;
+}
+
+.price-information {
+  display: flex;
+}
+
+.price-information p {
+  margin: 0;
+}
+
+.pay-information h6 {
+  margin: 0;
+}
+
+.product-description {
+  display: inline-block;
+  text-align: justify;
+  font-size: 0.9rem;
+  width: 260px;
+  margin: 20px auto;
 }
 
 #about .section-content p:last-child {
@@ -174,6 +223,7 @@ p {
   border-radius: 5px;
   border: 0;
   text-align: center;
+  float: right;
 }
 
 .btn:hover {
@@ -192,3 +242,44 @@ p {
   margin-bottom: 5px;
   box-shadow: 0 0 10px 1px #111;
 }
+
+.footer p {
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-template-1 {
+    grid-template-columns: auto auto;
+  }
+
+  .section-content {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .grid-template-1 {
+    grid-template-columns: auto;
+  }
+
+  .section-content {
+    justify-content: space-around;
+  }
+
+  .margin-zero {
+    margin-bottom: 50px; 
+  }
+
+  .margin-zero:last-child {
+    margin-bottom: 0; 
+  }
+
+  .contact-email {
+    display: block;
+  }
+
+  .contact-email input {
+    width: 98%;
+  }
+}
+
